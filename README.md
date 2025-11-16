@@ -49,3 +49,36 @@ The installer creates:
 ## 🔧 Build From Source
 
 ### Requirements
+
+pip install pynput
+pip install pillow
+pip install pystray
+pip install screeninfo
+pip install pyinstaller
+
+
+### Build EXE
+pyinstaller --onefile --windowed --icon icon.ico "anti_afk_ultimate.py"
+
+
+The EXE will appear inside `/dist/`.
+
+---
+
+🛡 Disclaimer
+
+Anti-AFK Ultimate is a utility tool intended for harmless automations.
+Use responsibly and avoid violating Roblox Terms of Service.
+
+---
+
+## 🔄 Auto-Update Format
+
+Your GitHub `update.json` must contain:
+
+```json
+{
+  "version": "1.0.0",
+  "file": "Anti-AFK Ultimate.exe"
+}
+
